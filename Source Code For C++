@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+    cout<< "Welcome to Vinil's 3*3 matrix solver!\n";
+    int r1,r2,r3,j1,j2,j3,k1,k2,k3;
+    cout << "\nInput Values For First row in this chronology: \n";
+    cin>> r1;
+    cout << "First term \n";
+    cin>> r2;
+    cout << "Second term \n";
+    cin>> r3;
+    cout << "Third term \n";
+    cout << "\nNow Similiarly Input The Values For The Second and Third row .\n";
+    cin>> j1;
+    cin>> j2;
+    cin>> j3;
+    cin>> k1;
+    cin>> k2;
+    cin>> k3;
+    cout << "\nThe Matrix Is: \n";
+    cout <<"\n"<<"\t"<<r1<<" "<<r2<<" "<< r3;
+    cout <<"\n"<<"\t"<<j1<<" "<<j2<<" "<<j3;
+    cout <<"\n"<<"\t"<<k1<<" "<<k2<<" "<<k3; 
+    float matrix = r1*(j2*k3-j3*k2)-r2*(j1*k3-j2*k1)+r3*(j1*k2-j2*k1);
+    cout <<"\n The Value Of The Matrix is"<< " "<<matrix ;   
+    return 0;
+
+}
